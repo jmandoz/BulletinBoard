@@ -14,6 +14,8 @@
 		A474674922D39FC600118BDA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674822D39FC600118BDA /* Message.swift */; };
 		A474674C22D3A67100118BDA /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674B22D3A67100118BDA /* MessageController.swift */; };
 		A474674F22D3A7E100118BDA /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674E22D3A7E100118BDA /* CloudKitController.swift */; };
+		A474675222D3B1B700118BDA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474675122D3B1B700118BDA /* MessageViewController.swift */; };
+		A474675622D3B40D00118BDA /* dateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474675522D3B40D00118BDA /* dateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A474674822D39FC600118BDA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A474674B22D3A67100118BDA /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		A474674E22D3A7E100118BDA /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
+		A474675122D3B1B700118BDA /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		A474675522D3B40D00118BDA /* dateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,10 @@
 		A474673322D39DDE00118BDA /* BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A474675422D3B1CC00118BDA /* Controller */,
 				A474674622D39E4100118BDA /* Resources */,
 				A474674722D39E5C00118BDA /* StoryBoards */,
 				A474674A22D3A65000118BDA /* Model */,
-				A474674D22D3A67600118BDA /* ModelController */,
 				A474675022D3A81B00118BDA /* Helpers+Extensions */,
 			);
 			path = BulletinBoard;
@@ -106,8 +110,26 @@
 			isa = PBXGroup;
 			children = (
 				A474674E22D3A7E100118BDA /* CloudKitController.swift */,
+				A474675522D3B40D00118BDA /* dateExtension.swift */,
 			);
 			path = "Helpers+Extensions";
+			sourceTree = "<group>";
+		};
+		A474675322D3B1BF00118BDA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A474675122D3B1B700118BDA /* MessageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A474675422D3B1CC00118BDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A474675322D3B1BF00118BDA /* ViewController */,
+				A474674D22D3A67600118BDA /* ModelController */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +206,9 @@
 				A474673522D39DDE00118BDA /* AppDelegate.swift in Sources */,
 				A474674C22D3A67100118BDA /* MessageController.swift in Sources */,
 				A474674F22D3A7E100118BDA /* CloudKitController.swift in Sources */,
+				A474675622D3B40D00118BDA /* dateExtension.swift in Sources */,
 				A474674922D39FC600118BDA /* Message.swift in Sources */,
+				A474675222D3B1B700118BDA /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

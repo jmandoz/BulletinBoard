@@ -12,8 +12,16 @@ class MessageController {
     //Shared instance
     static let shared = MessageController()
     
+    //create a notificate 
+    let messagesWereUpdatedNotification = Notification.Name("Messages were updated")
+    
     //Source of truth
-    var messages:[Message] = []
+    var messages:[Message] = [] {
+        didSet {
+            //Create a post for the notification
+            NotificationCenter.default.post(name: messagesWereUpdatedNotification, object: nil)
+        }
+    }
     
     //Crud Functions
     //Create:
@@ -34,7 +42,7 @@ class MessageController {
     //Read:
     func fetchMessageRecords() {
         let database = CloudKitController.shared.publicDatabase
-        CloudKitController.shared.fetchRecordsOf(type: Message.typeKey, database: database) { (records, error) in
+        CloudKitController.shared.fetchRecordsOf(type: MessageConstants.typeKey, database: database) { (records, error) in
             if let error = error {
                 print("Error in \(#function): \(error.localizedDescription) /n---/n \(error)")
             }
@@ -48,6 +56,9 @@ class MessageController {
     //Update:
     
     //Delete:
-    
-    
+//    func deleteMessageRecord() {
+//        let database = CloudKitController.shared.publicDatabase
+//        
+//    }
+//    
 }

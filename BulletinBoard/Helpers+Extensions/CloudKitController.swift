@@ -51,4 +51,6 @@ class CloudKitController {
             }
         }
     }
+    
+//    func deleteRecordsOf(
 }
