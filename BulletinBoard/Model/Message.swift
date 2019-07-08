@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import CloudKit
 
 class Message {
     
     //Keys for CloudKit
     
     //we will access the typekey later on in the project
-    static let typekey = "Message"
+    static let typeKey = "Message"
     private let textKey = "Text"
     private let timestampKey = "Timestamp"
     //we will mark this as private since we don't need it anywhere else

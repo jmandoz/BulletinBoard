@@ -12,6 +12,8 @@
 		A474673C22D39DDF00118BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A474673B22D39DDF00118BDA /* Assets.xcassets */; };
 		A474673F22D39DDF00118BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A474673D22D39DDF00118BDA /* LaunchScreen.storyboard */; };
 		A474674922D39FC600118BDA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674822D39FC600118BDA /* Message.swift */; };
+		A474674C22D3A67100118BDA /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674B22D3A67100118BDA /* MessageController.swift */; };
+		A474674F22D3A7E100118BDA /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474674E22D3A7E100118BDA /* CloudKitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A474673E22D39DDF00118BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A474674022D39DDF00118BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A474674822D39FC600118BDA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A474674B22D3A67100118BDA /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		A474674E22D3A7E100118BDA /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				A474674622D39E4100118BDA /* Resources */,
 				A474674722D39E5C00118BDA /* StoryBoards */,
-				A474674822D39FC600118BDA /* Message.swift */,
+				A474674A22D3A65000118BDA /* Model */,
+				A474674D22D3A67600118BDA /* ModelController */,
+				A474675022D3A81B00118BDA /* Helpers+Extensions */,
 			);
 			path = BulletinBoard;
 			sourceTree = "<group>";
@@ -78,6 +84,30 @@
 				A474673822D39DDE00118BDA /* Main.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A474674A22D3A65000118BDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A474674822D39FC600118BDA /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A474674D22D3A67600118BDA /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				A474674B22D3A67100118BDA /* MessageController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		A474675022D3A81B00118BDA /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A474674E22D3A7E100118BDA /* CloudKitController.swift */,
+			);
+			path = "Helpers+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A474673522D39DDE00118BDA /* AppDelegate.swift in Sources */,
+				A474674C22D3A67100118BDA /* MessageController.swift in Sources */,
+				A474674F22D3A7E100118BDA /* CloudKitController.swift in Sources */,
 				A474674922D39FC600118BDA /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
